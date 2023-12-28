@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>EOSIO Blockchain Enables Secure and Permissioned Smart Contracts - MaTTeo&#39;s Dlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.110.0"><meta property="og:site_name" content="MaTTeo&#39;s Dlog">
+  <meta property="og:title" content="EOSIO Blockchain Enables Secure and Permissioned Smart Contracts">
+  <meta property="og:description" content="A Blockchain for building dApps">
+  <meta property="description" content="A Blockchain for building dApps">
+  <meta property="og:url" content="/blog/whitepaper-eos/">
+  <meta property="og:type" content="article">
+  
+    
+      <meta property="og:image" content="/img/whitepaper/eosio.png">
+      <meta property="og:image:alt" content="eosio">
+    
+  
+  <link rel="stylesheet" href="../../css/bundle.min.b6b9b8366c481423149499a0fabce9ee8fa1437015f852c2360d2533c149c992.css"><link rel="stylesheet" href="../../css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="../../" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="../../" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="../../about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="../../blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="../../categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="../../contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts&amp;url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+
+
+
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+
+
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f&amp;title=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f&amp;title=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+
+
+
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f&amp;description=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by MaTTeo%20DeCaPa&amp;body=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="../../"><img src="../../img/main/avatar-oval.png" class="circle" width="100" alt="MaTTeo" /></a>
+  <header>
+    <h1>MaTTeo's Dlog</h1>
+  </header>
+  <main>
+    <p>A Web3 Blog for the new internet</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/DeCaPa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+<li><a href="//gitlab.com/DeCaPa" target="_blank" rel="noopener" title="GitLab" class="fab fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/decapua" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//reddit.com/user/DeCaPaio" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/DeCaPa_io" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/solutionprovide" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/DeCaPaio" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+  <a href="../../"><img src="../../img/main/brave-verified.png" class="rectangle" width="100" alt="Brave Creator" /></a>
+</section>
+
+      <main id="site-main">
+        
+  <article>
+    <div class="post">
+      <header>
+  <div class="title">
+    
+      <h2><a href="../../blog/whitepaper-eos/">EOSIO Blockchain Enables Secure and Permissioned Smart Contracts</a></h2>
+    
+    
+      <p>A Blockchain for building dApps</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2021-04-11 00:00:00 &#43;0000 UTC">April 11, 2021</time>
+    <p>MaTTeo DeCaPa</p>
+    <p>4-Minute Read</p>
+  </div>
+</header>
+
+      <div id="socnet-share">
+        
+
+
+
+
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts&amp;url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+
+
+
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+
+
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f&amp;title=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f&amp;title=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+
+
+
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f&amp;description=EOSIO%20Blockchain%20Enables%20Secure%20and%20Permissioned%20Smart%20Contracts" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by MaTTeo%20DeCaPa&amp;body=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-eos%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+      </div>
+      <div class="content">
+        <a href="../../blog/whitepaper-eos/" class="image" style="--bg-image: url('/img/whitepaper/eosio.png');">
+    <img class="stretchH" src="../../img/whitepaper/eosio.png" alt="eosio">
+  </a>
+        <h2 id="premise">Premise</h2>
+<p>The EOSIO blockchain is utilized by several decentralized projects.  Understanding the permissioning capabilities of the platform will help to gain an understanding of not only the EOSIO platform, but also how permissioned blockchains differ from fully permissionless blockchains.</p>
+<h2 id="eosio-value-proposition">EOSIO Value Proposition</h2>
+<p>EOSIO is a platform for building and vertically scaling decentralized applications (dApps).  EOSIO creates an operating-system-like platform from which dApps can be built and maintained.  EOSIO considers authorization, RAM storage, database, and asynchronous communication clusters scaling to millions of transactions per second.</p>
+<p>In contrast to Ethereum-based smart contracts, EOSIO-based dApps do not necessarily need to charge the user fees for interacting with the platform.  Rather, costs for interacting with the platform are paid for by either the dApp creator or the account owner.  Not all use-cases require a public user to pay for a particular service.  Consider consortium, enterprise, internal, or private decentralized systems use cases.  Real Estate, Insurance and Healthcare come to mind as examples where one would want data to be protected and not publicly accessible.  Other use cases could follow a web2 (or web2.5) strategy where dApps could implement legacy monetization strategies.   EOSIO attempts to be applicable to any number of use cases.</p>
+<h2 id="technology-categorization">Technology Categorization</h2>
+<ul>
+<li><strong>Type:</strong> level one, permissioned (restricted) Blockchain</li>
+<li><strong>Project Differentiator:</strong>   Built with developers in mind.  It aims to be a decentralized computing operating system while applying a security and access model to enable more use cases than public-only blockchains.</li>
+<li><strong><a href="https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md">Whitepaper</a></strong></li>
+<li><strong>Consensus:</strong>  Delegated Proof of Stake (DPOS)</li>
+<li><strong>Token:</strong> EOS.  Each project which forks the EOSIO codebase will have its own crypto currency.  By looking at the blockchain explorer, blocks.io, we can see a list of projects each with their own EOS based token.</li>
+</ul>
+
+
+  <center><img src="../img/EOSIO-blockchain-implemenations.PNG" alt="EOSIO Blockchain implementations" /></center>
+
+<h2 id="security-considerations">Security Considerations</h2>
+<h3 id="accounts">Accounts</h3>
+<p>Accounts identify a participant on the EOSIO blockchain.  A participant can be an individual or a group.  They also represent the smart contract actors that push and receive actions to and from other accounts in the blockchain.  Actions are contained within transactions whose actors are accounts.</p>
+<h3 id="permissions">Permissions</h3>
+<p>Permissions control what accounts can do, and how actions are authorized.  Account permissions are used to authorize actions and transactions to other accounts.   Permissions can be structured so that a particular named permission’s authorization can be satisfied with implicit authorization (if the parent is authorized, then the child is implicitly allowed).</p>
+<p>The permissions table includes all permissions and any associated hierarchy dependencies within those permissions.  Each permission is linked to an authority table.  The table utilizes “thresholds” before an action associated with a permission can execute.  The authority table associated with the permission contains not only the account’s threshold weight, but also any accounts which may execute on behalf of the account permission.  The weighting structure grants more trusted users a greater weight, or requires accounts with lesser authority to collectively participate (add together) to meet a certain weight.  The weighted solution may result in privilege escalation by a lower weighed user increasing weight to gain greater privileges.  Understanding how the platform minimizes this threat is outside the article’s scope.</p>
+
+
+  <center><img src="../img/EOSIO-perms.PNG" alt="EOSIO accounts authorities permissions" /></center>
+
+<p>All accounts will have Owner permission and Active permission.  All permissions utilize public key and private key pairs for each permission.  Private keys associated with each permission need to be protected.  The Owner permission private key should be kept in cold storage since it should only be used for account recovery.  Like a Root account, it should not be used to administer or operate the account. The Active permission would be used to make account changes.  Additional permissions can be created (along with key pairs) to do whatever may be necessary.   From a security perspective, this is where least privilege must come into play.   For any of these permissions, the private key is utilized to sign the transaction in order to validate the public key.</p>
+<p>It is this mechanism which determines how Actions and Handlers behave when they are received.  It is this interaction between (and among) accounts with the defined permissions associated with the Actions and Handlers which define a smart contract.   The permissioned architecture is what allows transactions to be secured and how Confidentiality and Integrity is upheld.</p>
+<h2 id="concluding-remarks">Concluding Remarks</h2>
+<p>There is a debate in the web3 community regarding permissioned versus permissionless blockchains, and to what degree of decentralization one may have over another.  Both solutions seem to have strengths and weaknesses.  I have not found a one size fits all, silver bullet.  I do not attempt to judge one approach over another.  Rather, I look at the architecture, the approach to securing the platform, the smart contracts, and the data of each decentralized solution.</p>
+
+      </div>
+      <footer>
+        <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="../../categories/web3/">web3</a></li>
+        
+          <li><a class="article-terms-link" href="../../categories/blockchain/">blockchain</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="../../tags/web3/">web3</a></li>
+        
+          <li><a class="article-terms-link" href="../../tags/blockchain/">blockchain</a></li>
+        
+          <li><a class="article-terms-link" href="../../tags/dapps/">dApps</a></li>
+        
+          <li><a class="article-terms-link" href="../../tags/crypto/">crypto</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+      </footer>
+    </div>
+    
+      
+
+    
+  </article>
+  <div class="pagination">
+    
+      <a href="../../blog/starting-application-security-program/" class="button left"><span>Starting an Application Security Program</span></a>
+    
+    
+      <a href="../../blog/decentralized-web-blog-dlog/" class="button right"><span>What is a Dlog?</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="../../blog/shift-everywhere/" class="image" style="--bg-image: url('/img/appsec/everywhere.png');">
+    <img src="../../img/appsec/everywhere.png" alt="Shift Everywhere">
+  </a>
+        <header>
+          <h2><a href="../../blog/shift-everywhere/">Shift Left? Shift Everywhere!</a></h2>
+          <time class="published" datetime="2023-03-18 00:00:00 &#43;0000 UTC">March 18, 2023</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/opensource-security-tools-across-the-devops-lifecycle/" class="image" style="--bg-image: url('/img/appsec/opensource.jpg');">
+    <img class="stretchV" src="../../img/appsec/opensource.jpg" alt="Opensource AppSec">
+  </a>
+        <header>
+          <h2><a href="../../blog/opensource-security-tools-across-the-devops-lifecycle/">Opensource AppSec for DevOps</a></h2>
+          <time class="published" datetime="2022-02-20 00:00:00 &#43;0000 UTC">February 20, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/whitepaper-grt/" class="image" style="--bg-image: url('/img/whitepaper/grt.png');">
+    <img src="../../img/whitepaper/grt.png" alt="The Graph">
+  </a>
+        <header>
+          <h2><a href="../../blog/whitepaper-grt/">The Graph (GRT) Whitepaper Review</a></h2>
+          <time class="published" datetime="2021-08-15 00:00:00 &#43;0000 UTC">August 15, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/nft-security/" class="image" style="--bg-image: url('/img/appsec/nft.png');">
+    <img src="../../img/appsec/nft.png" alt="nft">
+  </a>
+        <header>
+          <h2><a href="../../blog/nft-security/">Is Your NFT Collectable Secure and Legitimate?</a></h2>
+          <time class="published" datetime="2021-06-28 00:00:00 &#43;0000 UTC">June 28, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/starting-application-security-program/" class="image" style="--bg-image: url('/img/appsec/application-security-program.jpg');">
+    <img class="stretchH" src="../../img/appsec/application-security-program.jpg" alt="Application Security">
+  </a>
+        <header>
+          <h2><a href="../../blog/starting-application-security-program/">Starting an Application Security Program</a></h2>
+          <time class="published" datetime="2021-05-12 00:00:00 &#43;0000 UTC">May 12, 2021</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="../../blog/" class="button">See More</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="../../categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="../../categories/web3/">web3<span class="count">5</span></a>
+          
+          <li>
+              <a href="../../categories/web2/">web2<span class="count">3</span></a>
+          
+          <li>
+              <a href="../../categories/random/">random<span class="count">2</span></a>
+          
+          <li>
+              <a href="../../categories/blockchain/">blockchain<span class="count">1</span></a>
+          
+          <li>
+              <a href="../../categories/infrastructure/">infrastructure<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This site is committed to Web and Decentralized Computing</p>
+      <footer>
+        <a href="../../about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/DeCaPa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+<li><a href="//gitlab.com/DeCaPa" target="_blank" rel="noopener" title="GitLab" class="fab fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/decapua" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//reddit.com/user/DeCaPaio" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/DeCaPa_io" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/solutionprovide" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/DeCaPaio" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    © 2023 MaTTeo&#39;s Dlog
+      <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.110.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="../../js/highlight.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script><script src="../../js/bundle.min.bd6c6026e27c1a4420f4b04f761f6afb28de6d780b8e1e69d5bc6268b0fd3c1b.js"></script>
+    <script src="../../js/add-on.js"></script>
+    </div>
+  </body>
+</html>

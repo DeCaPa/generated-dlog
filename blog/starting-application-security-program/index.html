@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Starting an Application Security Program - MaTTeo&#39;s Dlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.110.0"><meta property="og:site_name" content="MaTTeo&#39;s Dlog">
+  <meta property="og:title" content="Starting an Application Security Program">
+  <meta property="og:description" content="It&#39;s easy to purchase tools, but getting ROI and reduced risk is something that require a little hard work.">
+  <meta property="description" content="It&#39;s easy to purchase tools, but getting ROI and reduced risk is something that require a little hard work.">
+  <meta property="og:url" content="/blog/starting-application-security-program/">
+  <meta property="og:type" content="article">
+  
+    
+      <meta property="og:image" content="/img/appsec/application-security-program.jpg">
+      <meta property="og:image:alt" content="Application Security">
+    
+  
+  <link rel="stylesheet" href="../../css/bundle.min.b6b9b8366c481423149499a0fabce9ee8fa1437015f852c2360d2533c149c992.css"><link rel="stylesheet" href="../../css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="../../" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="../../" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="../../about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="../../blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="../../categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="../../contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Starting%20an%20Application%20Security%20Program&amp;url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+
+
+
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+
+
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f&amp;title=Starting%20an%20Application%20Security%20Program" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f&amp;title=Starting%20an%20Application%20Security%20Program" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+
+
+
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f&amp;description=Starting%20an%20Application%20Security%20Program" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by MaTTeo%20DeCaPa&amp;body=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="../../"><img src="../../img/main/avatar-oval.png" class="circle" width="100" alt="MaTTeo" /></a>
+  <header>
+    <h1>MaTTeo's Dlog</h1>
+  </header>
+  <main>
+    <p>A Web3 Blog for the new internet</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/DeCaPa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+<li><a href="//gitlab.com/DeCaPa" target="_blank" rel="noopener" title="GitLab" class="fab fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/decapua" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//reddit.com/user/DeCaPaio" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/DeCaPa_io" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/solutionprovide" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/DeCaPaio" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+  <a href="../../"><img src="../../img/main/brave-verified.png" class="rectangle" width="100" alt="Brave Creator" /></a>
+</section>
+
+      <main id="site-main">
+        
+  <article>
+    <div class="post">
+      <header>
+  <div class="title">
+    
+      <h2><a href="../../blog/starting-application-security-program/">Starting an Application Security Program</a></h2>
+    
+    
+      <p>It&#39;s easy to purchase tools, but getting ROI and reduced risk is something that require a little hard work.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2021-05-12 00:00:00 &#43;0000 UTC">May 12, 2021</time>
+    <p>MaTTeo DeCaPa</p>
+    <p>7-Minute Read</p>
+  </div>
+</header>
+
+      <div id="socnet-share">
+        
+
+
+
+
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Starting%20an%20Application%20Security%20Program&amp;url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+
+
+
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+
+
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f&amp;title=Starting%20an%20Application%20Security%20Program" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f&amp;title=Starting%20an%20Application%20Security%20Program" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+
+
+
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f&amp;description=Starting%20an%20Application%20Security%20Program" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by MaTTeo%20DeCaPa&amp;body=https%3a%2f%2fdecapa.io%2fblog%2fstarting-application-security-program%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+      </div>
+      <div class="content">
+        <a href="../../blog/starting-application-security-program/" class="image" style="--bg-image: url('/img/appsec/application-security-program.jpg');">
+    <img class="stretchH" src="../../img/appsec/application-security-program.jpg" alt="Application Security">
+  </a>
+        <p><em>Originally, I authored this article for the Veracode Community Website.</em></p>
+<h1 id="ive-got-the-appsec-tools-now-what">I’ve Got the AppSec Tools, Now What?</h1>
+<p><em>An article for the Veracode Community:</em></p>
+<p>Fantastic! Your org has purchased shiny new products that will seriously up your game against those pesky adversaries and take a bite out of risk. Often, the first question asked after such a purchase is, “now what?”  The purpose of this article is to provide some thought provoking tips aimed to keep AppSec moving along.</p>
+<h2 id="understand-your-landscape">Understand Your Landscape</h2>
+<p>Every industry, every company, and every team is different.  Consider number of dev teams and total number of developers.  Each company functions a little different from the next. Companies are organized, have diverse company culture and varying levels of software maturity.  Wow! A lot of factors play into determining next steps, and ultimately the success of Application Security within your company.   So, where do you start?  Let’s consider a few more things.</p>
+<h2 id="size-matters">Size Matters</h2>
+<p>Do you need to be a program manager or a hands-on devSecOps engineer?  It depends upon the size of the organization, the number of software products, teams, and developers.  Are you going to need to be hands-on-technical running the tools, automating scans and mitigating flaws? Or do you need to be a super-energetic program manager specializing in cat herding?  Maybe something in between?  Is AppSec going to be a team of one or a few?  Will there be roles to fill? The aligned resource(s) should be reflective size.  For example, a heads-down programmer who knows Application Security inside and out might lack skills necessary to lead a multi-national, multi company enterprise of 100’s or 1000’s of developers.  However, in other scenarios that individual makes all the sense in the world.</p>
+<h2 id="know-your-dev-teams">Know Your Dev Teams</h2>
+<p>What does your appSec inventory look like?  If you don’t have one already, it’s a good first step to get one started and commit to maintaining it.  What programming languages are being used? How about development tools?  Are teams Agile, Waterfall, or Wild West?  Even for a company with one agile “2 pizza team”, an inventory will help in the formation of an appSec roadmap.</p>
+<p>If you can’t embed within a team, the more you interact with them and speak their language, the greater chance for success.  You don’t want to be the security personality that developers run away from. Rather, cultivating open and honest communication will help in the long term as you share in the success of high quality secure releases that lower application risk for the organization.   As a check point, are developers coming to you asking questions, and is your only communication to developers, “Just fix your darn code”.  As a developer who would you rather work with?</p>
+<p>In large orgs, finding a Security Champion to help carry the AppSec banner will help multiply the efforts.  As your program succeeds and grows, your time may start to spread thin.   Champions can help with setting up scans, automation and mitigations, just to name a few activities.   These individuals will have or develop the same AppSec passion that led you to where you are today.  Security Champions will be a great resource going forward.   A champion per team is a good goal to have in large environments.  The individual will help keep things moving when you can’t be there yourself.  Ultimately, all developers need to become secure developers, and Champions are a first step to help get there.</p>
+<h2 id="leverage-your-veracode-resources">Leverage Your Veracode Resources</h2>
+<p>Your assigned account manager, customer success manager, and solution architect.  They usually come with the product and their Raison d’Être is to make you successful!   It’s important to get to know them, and keep the lines of communication open and prioritized.  Challenge and hold the Veracode team accountable to help you leverage and get as much value from the tools as possible.  Meet often, set goals and work together.  Leverage consultation calls to get help get to the root of the problem with the hard issues.   Consultation calls are a great way to get down to the core of the flaw quickly.</p>
+<p>The Veracode squad is just as important as the tool itself.  Lastly, leverage your two new favorite websites:
+
+
+  <a href="https://community.veracode.com" target="blank">Veracode Community Website</a> and <a href="https://help.veracode.com" target="blank">Veracode Help</a>.  
+</p>
+<h2 id="user-access-to-the-veracode-platform">User Access to the Veracode Platform</h2>
+<p>Implement single sign on to Veracode if your company has the capability.  Make it easy to get on Veracode to look at results.  Regarding team size, think about the various roles, groups, and views that might be needed for accessing the platform.   It is tempting to go with a flat structure where everyone sees everything, but you might be limiting yourself or creating extra work down the road with one all-encompassing team.   A Baby Bear (just right) approach to teams, roles and groups will help not only for access, but also for reporting metrics and showing the value of Application Security.</p>
+<p>Depending on how you roll out the platform (you do have a plan for that, right?) The number of users will likely grow.  As the user base grows, it might be helpful to have a slide deck or develop a consistent step-by-step Veracode website walk thru to show new users.  Be prepared to demo the Veracode website over, and over, and over again.  Given Veracode’s automation capabilities, users may not need to get in very often, so it’s good to have reminder sessions to help keep the platform fresh in their minds.</p>
+<h2 id="maturity">Maturity</h2>
+<p>It’s hard to go from 0 to 60 miles per hour in 1.99 seconds.  Unless you are in a Tesla, it takes time to get up to speed and mature.  A roadmap is a good way to show how the program will mature.  Those executive-types love to see what you plan to do, how it will help reduce risk, and when you intend to get there.  Will it be iterative?  How many iterations? What percentage of repos will you be scanning and by when?  How will tools be rolled out?  Will you take a team-by-team approach, or roll out one tool at a time?  At what point will automation be implemented?  Follow the roadmap and adjust as needed.  Each iteration is a notch in your maturity belt and a step closer to Plaid Speed!</p>
+<h2 id="show-your-value">Show Your Value</h2>
+<p>Your company has invested in AppSec tools, and most importantly, they’ve invested in YOU!  If they didn’t believe you were the best person for the job, you wouldn’t be doing it.  Success depends on your ability to show that the program is making things better.  It is by showing how you are leveraging the tools, how teams are performing, and ultimately how you are performing.   Using Veracode’s reporting capabilities is a great way to show this value.</p>
+<p>Veracode comes with great out of the box reports that can be customized by role.  It is possible to make a dashboard that shows exactly what a user needs to see based on their permissions, by leveraging the access groups you determined in the section above.   A dashboard for each team that aggregates up the food chain provides a lot of value.  For example, the team dashboard aggregates to a director’s dashboard that aggregates to a CISO/CIO view.    An example of a metric might be a simple aggregated percent compliant metric for a CISO representing the whole enterprise.  Whereas, a listing of code bases that pass or fail compliance would be more meaningful to a busy director.  Of course, development teams need to see the nitty gritty details as feedback to identify and mitigate.</p>
+<h2 id="in-summary">In Summary</h2>
+<p>The article wasn’t about the technical aspects of the products and services you purchased. It was intended to help aspiring AppSec program managers and engineers to get a glimpse into the softer side of starting an AppSec journey.</p>
+
+      </div>
+      <footer>
+        <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="../../categories/web2/">web2</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="../../tags/appsec/">appSec</a></li>
+        
+          <li><a class="article-terms-link" href="../../tags/security/">security</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+      </footer>
+    </div>
+    
+      
+
+    
+  </article>
+  <div class="pagination">
+    
+      <a href="../../blog/nft-security/" class="button left"><span>Is Your NFT Collectable Secure and Legitimate?</span></a>
+    
+    
+      <a href="../../blog/whitepaper-eos/" class="button right"><span>EOSIO Blockchain Enables Secure and Permissioned Smart Contracts</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="../../blog/shift-everywhere/" class="image" style="--bg-image: url('/img/appsec/everywhere.png');">
+    <img src="../../img/appsec/everywhere.png" alt="Shift Everywhere">
+  </a>
+        <header>
+          <h2><a href="../../blog/shift-everywhere/">Shift Left? Shift Everywhere!</a></h2>
+          <time class="published" datetime="2023-03-18 00:00:00 &#43;0000 UTC">March 18, 2023</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/opensource-security-tools-across-the-devops-lifecycle/" class="image" style="--bg-image: url('/img/appsec/opensource.jpg');">
+    <img class="stretchV" src="../../img/appsec/opensource.jpg" alt="Opensource AppSec">
+  </a>
+        <header>
+          <h2><a href="../../blog/opensource-security-tools-across-the-devops-lifecycle/">Opensource AppSec for DevOps</a></h2>
+          <time class="published" datetime="2022-02-20 00:00:00 &#43;0000 UTC">February 20, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/whitepaper-grt/" class="image" style="--bg-image: url('/img/whitepaper/grt.png');">
+    <img src="../../img/whitepaper/grt.png" alt="The Graph">
+  </a>
+        <header>
+          <h2><a href="../../blog/whitepaper-grt/">The Graph (GRT) Whitepaper Review</a></h2>
+          <time class="published" datetime="2021-08-15 00:00:00 &#43;0000 UTC">August 15, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/nft-security/" class="image" style="--bg-image: url('/img/appsec/nft.png');">
+    <img src="../../img/appsec/nft.png" alt="nft">
+  </a>
+        <header>
+          <h2><a href="../../blog/nft-security/">Is Your NFT Collectable Secure and Legitimate?</a></h2>
+          <time class="published" datetime="2021-06-28 00:00:00 &#43;0000 UTC">June 28, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/starting-application-security-program/" class="image" style="--bg-image: url('/img/appsec/application-security-program.jpg');">
+    <img class="stretchH" src="../../img/appsec/application-security-program.jpg" alt="Application Security">
+  </a>
+        <header>
+          <h2><a href="../../blog/starting-application-security-program/">Starting an Application Security Program</a></h2>
+          <time class="published" datetime="2021-05-12 00:00:00 &#43;0000 UTC">May 12, 2021</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="../../blog/" class="button">See More</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="../../categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="../../categories/web3/">web3<span class="count">5</span></a>
+          
+          <li>
+              <a href="../../categories/web2/">web2<span class="count">3</span></a>
+          
+          <li>
+              <a href="../../categories/random/">random<span class="count">2</span></a>
+          
+          <li>
+              <a href="../../categories/blockchain/">blockchain<span class="count">1</span></a>
+          
+          <li>
+              <a href="../../categories/infrastructure/">infrastructure<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This site is committed to Web and Decentralized Computing</p>
+      <footer>
+        <a href="../../about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/DeCaPa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+<li><a href="//gitlab.com/DeCaPa" target="_blank" rel="noopener" title="GitLab" class="fab fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/decapua" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//reddit.com/user/DeCaPaio" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/DeCaPa_io" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/solutionprovide" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/DeCaPaio" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    © 2023 MaTTeo&#39;s Dlog
+      <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.110.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="../../js/highlight.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script><script src="../../js/bundle.min.bd6c6026e27c1a4420f4b04f761f6afb28de6d780b8e1e69d5bc6268b0fd3c1b.js"></script>
+    <script src="../../js/add-on.js"></script>
+    </div>
+  </body>
+</html>

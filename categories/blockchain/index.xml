@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blockchain on MaTTeo&#39;s Dlog</title>
+    <link>/categories/blockchain/</link>
+    <description>Recent content in blockchain on MaTTeo&#39;s Dlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EOSIO Blockchain Enables Secure and Permissioned Smart Contracts</title>
+      <link>/blog/whitepaper-eos/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/whitepaper-eos/</guid>
+      <description>Premise The EOSIO blockchain is utilized by several decentralized projects. Understanding the permissioning capabilities of the platform will help to gain an understanding of not only the EOSIO platform, but also how permissioned blockchains differ from fully permissionless blockchains.
+EOSIO Value Proposition EOSIO is a platform for building and vertically scaling decentralized applications (dApps). EOSIO creates an operating-system-like platform from which dApps can be built and maintained. EOSIO considers authorization, RAM storage, database, and asynchronous communication clusters scaling to millions of transactions per second.</description>
+    </item>
+    
+  </channel>
+</rss>

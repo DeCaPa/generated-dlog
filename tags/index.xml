@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on MaTTeo&#39;s Dlog</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on MaTTeo&#39;s Dlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>appSec</title>
+      <link>/tags/appsec/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/appsec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>/tags/security/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crypto</title>
+      <link>/tags/crypto/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/crypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dApps</title>
+      <link>/tags/dapps/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dapps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GRT</title>
+      <link>/tags/grt/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/grt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web3</title>
+      <link>/tags/web3/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/web3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nft</title>
+      <link>/tags/nft/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blockchain</title>
+      <link>/tags/blockchain/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ipfs</title>
+      <link>/tags/ipfs/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ipfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>/tags/privacy/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>random</title>
+      <link>/tags/random/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/random/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

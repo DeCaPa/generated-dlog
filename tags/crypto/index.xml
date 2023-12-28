@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crypto on MaTTeo&#39;s Dlog</title>
+    <link>/tags/crypto/</link>
+    <description>Recent content in crypto on MaTTeo&#39;s Dlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Graph (GRT) Whitepaper Review</title>
+      <link>/blog/whitepaper-grt/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/whitepaper-grt/</guid>
+      <description>Premise Searching for meaningful information from blockchain data and decentralized storage (IPFS) is extremely difficult. To begin, data stored on a blockchain is transactional and based sequentially upon when the transaction was added to the chain. A traditional database is relational but blockchains are not. Imagine having to search thru every block beginning with the genesis block to the most recent to find what you are looking for. It will not only be slow, but the amount of processing and transformation into something meaningful is cumbersome and requires that you do it all yourself.</description>
+    </item>
+    
+    <item>
+      <title>EOSIO Blockchain Enables Secure and Permissioned Smart Contracts</title>
+      <link>/blog/whitepaper-eos/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/whitepaper-eos/</guid>
+      <description>Premise The EOSIO blockchain is utilized by several decentralized projects. Understanding the permissioning capabilities of the platform will help to gain an understanding of not only the EOSIO platform, but also how permissioned blockchains differ from fully permissionless blockchains.
+EOSIO Value Proposition EOSIO is a platform for building and vertically scaling decentralized applications (dApps). EOSIO creates an operating-system-like platform from which dApps can be built and maintained. EOSIO considers authorization, RAM storage, database, and asynchronous communication clusters scaling to millions of transactions per second.</description>
+    </item>
+    
+  </channel>
+</rss>

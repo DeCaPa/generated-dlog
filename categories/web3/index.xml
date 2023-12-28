@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web3 on MaTTeo&#39;s Dlog</title>
+    <link>/categories/web3/</link>
+    <description>Recent content in web3 on MaTTeo&#39;s Dlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/web3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Graph (GRT) Whitepaper Review</title>
+      <link>/blog/whitepaper-grt/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/whitepaper-grt/</guid>
+      <description>Premise Searching for meaningful information from blockchain data and decentralized storage (IPFS) is extremely difficult. To begin, data stored on a blockchain is transactional and based sequentially upon when the transaction was added to the chain. A traditional database is relational but blockchains are not. Imagine having to search thru every block beginning with the genesis block to the most recent to find what you are looking for. It will not only be slow, but the amount of processing and transformation into something meaningful is cumbersome and requires that you do it all yourself.</description>
+    </item>
+    
+    <item>
+      <title>Is Your NFT Collectable Secure and Legitimate?</title>
+      <link>/blog/nft-security/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/nft-security/</guid>
+      <description>What is an NFT? NFT stands for NonFungible Token. Think of it as a digital record which has been minted (created) on a blockchain. Meaning, the file represents &amp;ldquo;something&amp;rdquo; that has been recorded on a blockchain. It is very unlikely the NFT itself is stored on a blockchain, rather the transaction details and a reference to the actual NFT location are stored on the blockchain.
+There are many potential &amp;ldquo;gotcha&amp;rsquo;s&amp;rdquo; associated with NFT&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>EOSIO Blockchain Enables Secure and Permissioned Smart Contracts</title>
+      <link>/blog/whitepaper-eos/</link>
+      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/whitepaper-eos/</guid>
+      <description>Premise The EOSIO blockchain is utilized by several decentralized projects. Understanding the permissioning capabilities of the platform will help to gain an understanding of not only the EOSIO platform, but also how permissioned blockchains differ from fully permissionless blockchains.
+EOSIO Value Proposition EOSIO is a platform for building and vertically scaling decentralized applications (dApps). EOSIO creates an operating-system-like platform from which dApps can be built and maintained. EOSIO considers authorization, RAM storage, database, and asynchronous communication clusters scaling to millions of transactions per second.</description>
+    </item>
+    
+    <item>
+      <title>What is a Dlog?</title>
+      <link>/blog/decentralized-web-blog-dlog/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/decentralized-web-blog-dlog/</guid>
+      <description>The article answers the question of &amp;ldquo;what exactly is a &amp;ldquo;Dlog&amp;rdquo;? No this is not a typo. Blogs are so Web2. A Dlog, is a concatenation of Decentralized and Blog. Wow! Real original. What is interesting is that at the time of this writing Googling Dlog did not return anything remotely close to a distributed or decentralized web log. As far as I know, this is the first documented use of Dlog in the web3 context.</description>
+    </item>
+    
+    <item>
+      <title>My First IPFS-Based Post</title>
+      <link>/blog/first/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/first/</guid>
+      <description>Through the Looking DappsFiguring out IPFS and Web3Hello IPFS! I just created a very simple page using IPFS. Like all well-intentioned, beginner bloggers ... more to come!Navigation can be tricky in IPFS. You must have an understanding of Merkel Trees because changing will result in a changed CID. Also, it is important to make a blog that will run on both the IPFS protocol and legacy https.</description>
+    </item>
+    
+  </channel>
+</rss>

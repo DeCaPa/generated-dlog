@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on MaTTeo&#39;s Dlog</title>
+    <link>/tags/security/</link>
+    <description>Recent content in security on MaTTeo&#39;s Dlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shift Left? Shift Everywhere!</title>
+      <link>/blog/shift-everywhere/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/shift-everywhere/</guid>
+      <description>Shift Left? Shift Everywhere! The notion of shifting left has been a best practice by application security practitioners, devOps engineers, and application security tool vendors for a long time. Shift Left is a term used to reflect the practice of identifying weaknesses and vulnerabilities as quickly as possible, while minimizing development friction. The advantage to identifying issues early on, results in better security, agility, and cost efficiencies.
+Left Until You Cannot Shift Left is accomplished by utilizing secure code analysis tools, trained secure developers, and automation to provide feedback at the speed of DevOps.</description>
+    </item>
+    
+    <item>
+      <title>Opensource AppSec for DevOps</title>
+      <link>/blog/opensource-security-tools-across-the-devops-lifecycle/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/opensource-security-tools-across-the-devops-lifecycle/</guid>
+      <description>Introduction Q: Is it possible for a commercial enterprise to implement an application security program with only opensource tools?
+A: tl;dr – Yes, it’s possible!
+Oftentimes organizations face a lack of funding to implement a commercial, “turnkey” application security solution. As an alternative, it might be worth evaluating opensource solutions. It&amp;rsquo;s important to note the term opensource comes with the understanding that many “free” application security tools are not “free” for commercial use.</description>
+    </item>
+    
+    <item>
+      <title>Is Your NFT Collectable Secure and Legitimate?</title>
+      <link>/blog/nft-security/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/nft-security/</guid>
+      <description>What is an NFT? NFT stands for NonFungible Token. Think of it as a digital record which has been minted (created) on a blockchain. Meaning, the file represents &amp;ldquo;something&amp;rdquo; that has been recorded on a blockchain. It is very unlikely the NFT itself is stored on a blockchain, rather the transaction details and a reference to the actual NFT location are stored on the blockchain.
+There are many potential &amp;ldquo;gotcha&amp;rsquo;s&amp;rdquo; associated with NFT&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>Starting an Application Security Program</title>
+      <link>/blog/starting-application-security-program/</link>
+      <pubDate>Wed, 12 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/starting-application-security-program/</guid>
+      <description>Originally, I authored this article for the Veracode Community Website.
+I’ve Got the AppSec Tools, Now What? An article for the Veracode Community:
+Fantastic! Your org has purchased shiny new products that will seriously up your game against those pesky adversaries and take a bite out of risk. Often, the first question asked after such a purchase is, “now what?” The purpose of this article is to provide some thought provoking tips aimed to keep AppSec moving along.</description>
+    </item>
+    
+  </channel>
+</rss>

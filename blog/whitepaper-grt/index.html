@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>The Graph (GRT) Whitepaper Review - MaTTeo&#39;s Dlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.110.0"><meta property="og:site_name" content="MaTTeo&#39;s Dlog">
+  <meta property="og:title" content="The Graph (GRT) Whitepaper Review">
+  <meta property="og:description" content="Making Web3 Queryable">
+  <meta property="description" content="Making Web3 Queryable">
+  <meta property="og:url" content="/blog/whitepaper-grt/">
+  <meta property="og:type" content="article">
+  
+    
+      <meta property="og:image" content="/img/whitepaper/grt.png">
+      <meta property="og:image:alt" content="The Graph">
+    
+  
+  <link rel="stylesheet" href="../../css/bundle.min.b6b9b8366c481423149499a0fabce9ee8fa1437015f852c2360d2533c149c992.css"><link rel="stylesheet" href="../../css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="../../" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="../../" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="../../about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="../../blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="../../categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="../../contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=The%20Graph%20%28GRT%29%20Whitepaper%20Review&amp;url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+
+
+
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+
+
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f&amp;title=The%20Graph%20%28GRT%29%20Whitepaper%20Review" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f&amp;title=The%20Graph%20%28GRT%29%20Whitepaper%20Review" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+
+
+
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f&amp;description=The%20Graph%20%28GRT%29%20Whitepaper%20Review" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by MaTTeo%20DeCaPa&amp;body=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="../../"><img src="../../img/main/avatar-oval.png" class="circle" width="100" alt="MaTTeo" /></a>
+  <header>
+    <h1>MaTTeo's Dlog</h1>
+  </header>
+  <main>
+    <p>A Web3 Blog for the new internet</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/DeCaPa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+<li><a href="//gitlab.com/DeCaPa" target="_blank" rel="noopener" title="GitLab" class="fab fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/decapua" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//reddit.com/user/DeCaPaio" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/DeCaPa_io" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/solutionprovide" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/DeCaPaio" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+  <a href="../../"><img src="../../img/main/brave-verified.png" class="rectangle" width="100" alt="Brave Creator" /></a>
+</section>
+
+      <main id="site-main">
+        
+  <article>
+    <div class="post">
+      <header>
+  <div class="title">
+    
+      <h2><a href="../../blog/whitepaper-grt/">The Graph (GRT) Whitepaper Review</a></h2>
+    
+    
+      <p>Making Web3 Queryable</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2021-08-15 00:00:00 &#43;0000 UTC">August 15, 2021</time>
+    <p>MaTTeo DeCaPa</p>
+    <p>6-Minute Read</p>
+  </div>
+</header>
+
+      <div id="socnet-share">
+        
+
+
+
+
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=The%20Graph%20%28GRT%29%20Whitepaper%20Review&amp;url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+
+
+
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+
+
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f&amp;title=The%20Graph%20%28GRT%29%20Whitepaper%20Review" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f&amp;title=The%20Graph%20%28GRT%29%20Whitepaper%20Review" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+
+
+
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f&amp;description=The%20Graph%20%28GRT%29%20Whitepaper%20Review" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+
+
+
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by MaTTeo%20DeCaPa&amp;body=https%3a%2f%2fdecapa.io%2fblog%2fwhitepaper-grt%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+      </div>
+      <div class="content">
+        <a href="../../blog/whitepaper-grt/" class="image" style="--bg-image: url('/img/whitepaper/grt.png');">
+    <img src="../../img/whitepaper/grt.png" alt="The Graph">
+  </a>
+        <h2 id="premise">Premise</h2>
+<p>Searching for meaningful information from blockchain data and decentralized storage (IPFS) is extremely difficult. To begin, data stored on a blockchain is transactional and based sequentially upon when the transaction was added to the chain.  A traditional database is relational but blockchains are not.  Imagine having to search thru every block beginning with the genesis block to the most recent to find what you are looking for.  It will not only be slow, but the amount of processing and transformation into something meaningful is cumbersome and requires that you do it all yourself.  Not to mention, the solution would be centralized and proprietary.</p>
+<h2 id="the-graph-value-proposition">The Graph Value Proposition</h2>
+<p>Originally defined as a <em>Decentralized Query Protocol</em>, The Graph provides the tools and the community network to create a simplified and fully decentralized means to query data that has been indexed into what is called a <em>subgraph</em>.   Data in context is <em>information</em>, and the capability to query information is what makes The Graph so valuable for use in the Web3 dApp universe.</p>
+<h2 id="technology-categorization">Technology Categorization</h2>
+<ul>
+<li><strong>Type:</strong> Web3 Query and Index.  A means to provide dApps with decentralized-sourced data (blockchain and storage) upon which to easily use.  A decentralized network for providing data in context, i.e. providing <em>Information in a queryable way</em>.  The specific information is termed a <em>subgraph</em>.</li>
+<li><strong>Project Differentiator:</strong>  Current approaches require dApp developers to create their own solutions.  The Graph provides the tools and the network community to simplify inclusion of blockchain information into dApps.</li>
+<li><strong>Original <a href="https://github.com/graphprotocol/research/blob/master/papers/whitepaper/the-graph-whitepaper.pdf">Whitepaper</a></strong> and current <a href="https://thegraph.com/docs/">documentation</a>.</li>
+<li><strong>Consensus:</strong>  Proof of Indexing.  I think of this as the quality of information the subgraph provides.  The better it is, the greater the value.  If it is deemed untrustworthy it risks getting slashed.</li>
+<li><strong>Token:</strong> GRT.  It is used for all aspects within The Graph network.  Paying for a query, as a staking coin, to compensation for all the entities which are needed to make the network community to operate.</li>
+</ul>
+<h2 id="the-network-entities">The Network Entities</h2>
+<p>There are several entities that make up The Graph Network.   The Graph calls them Network Roles.  Images taken from <a href="https://thegraph.com">TheGraph.com</a>.</p>
+
+
+  <center>
+    <img src="../img/subgraph-developer.PNG" width="100" height="100" alt="a subgraph developer" />
+    <img src="../img/subgraph-indexer.PNG" width="100" height="100" alt="a subgraph indexer" />  
+    <img src="../img/subgraph-curator.PNG" width="100" height="100" alt="a subgraph curator" /> 
+    <img src="../img/subgraph-delegator.PNG" width="100" height="100" alt="a subgraph developer" />
+  </center>
+
+<h3 id="end-user">End User</h3>
+<p>The Client is the dApp running on the end user&rsquo;s device that queries a particular subgraph.  The end user receives the information which is provided thru the particular dApp calling it.</p>
+<h3 id="developer">Developer</h3>
+<p>It is a developer who creates a subgraph.  The developer indexes based on a smart contract on a Graph-supported blockchain. The subgraph is then deployed to a Graph Node.</p>
+<p>Also, it is the developer who builds a dApp to query a subgraph thru a GraphQL endpoint. Accomplished in much the same way a developer will program a call to an API, using GraphQL</p>
+<h3 id="indexer">Indexer</h3>
+<p>Indexers are Node Operators.  They provide indexing and processing services.  The Indexer is required to stake GRT to operate a node.  At time of this writing, the minimum amount is 100,000GRT.  Indexers can also have GRT delegated to them from the Delegators.  Think of this as Delegated Proof of Stake (DPOS), See Delegators below.</p>
+<p>Indexers earn query fees and index rewards.  The Indexer selects which subgraphs to index, in part based on what curators think about a particular subgraph.</p>
+<p>Indexers use the Curators recommendations (signal) to process subgraphs as a determinant of which ones to Index.</p>
+<h3 id="curator">Curator</h3>
+<p>Curators signal subgraphs that they feel should be indexed. Think of this as the Influencer group, with &ldquo;skin in the game&rdquo;.  Curators will look at <a href="https://thegraph.com/explorer/">The Graph Explorer</a> and determine if the subgraph has enough value to it to stake GRT on it.  The curator stakes GRT on specific subgraphs to earn royalties.  A developer is likely to curate his own subgraph.</p>
+<p>Becoming a curator requires depositing GRT following a bonding curve to mint shares of the subgraph.  The amount of minted shares is the proportional size of your ownership.  Since signaling uses a bonding curve to determine your subgraph shares, the sooner you decide to Curate a subgraph, the greater the potential reward.  A developer will be first in, because they wrote it and believe it contains great potential.  If you think it&rsquo;s a great subgraph too, you will want to signal as early as possible.</p>
+<p>There are risks associated with Curators.  Risks such as a bad or buggy subgraph.  A subgraph that is not used will not earn query fees, so no rewards for you. You are subject to a 2.5% curation tax that you will not get back.</p>
+<p>In essence, you are depositing GRT (staking), to mint shares of the subgraph (ownership shares in return).  The shares proportionately allocate the royalties that are earned for the subgraph.  Getting in early to a particular subgraph means you&rsquo;ll need to stake less GRT than someone who gets in later.  To unsignal, you will need to burn your subgraph shares to get your GRT back after a waiting period.</p>
+<h3 id="delegator">Delegator</h3>
+<p>A Delegator stakes GRT to Indexers. As stated above, this is similar to DPOS when it comes to staking governance tokens to allow others to vote on your behalf.  The benefit of doing this is that you earn a portion of the Indexer rewards and the Query Fees.  So, if you own GRT and want to have an opportunity to earn while hodling, you can become a Delegator.</p>
+<p><strong>Understand everything before you do it!</strong></p>
+<ul>
+<li>There is a charge (.5%) to delegate.</li>
+<li>There is an unbonding period of 28 days before you get your GRT back, and you stop earning query fees.</li>
+<li><strong>Choose your Indexer wisely!</strong>  The indexer decides your cut. They can&rsquo;t steal your GRT, but they can take advantage of you in some ways. All this info is found in <a href="https://thegraph.com/explorer/">The Graph Explorer</a>.</li>
+</ul>
+<p>The Delegator role is the path of least resistance and the least technical to become a player in The Graph Network.  Do you want to know more about the Delegator role?  Here is a great  <a href="https://www.youtube.com/watch?v=2G7S2gdURdc">introductory video</a> for prospective Delegators.</p>
+<h2 id="graphql-security-considerations">GraphQL Security Considerations</h2>
+<p>It is no coincidence The Graph&rsquo;s name comes from the Graph Query Language (GraphQL).  GraphQL is a carryover technology from the Web2 world and was developed by Facebook as an alternative to JSON for querying API&rsquo;s.  Secure development considerations also apply in Web3. An indexer isn&rsquo;t going to list your subgraph if they think it is a security risk.  <a href="https://owasp.org/www-project-api-security/">OWASP API Security</a> is your friend when it comes to subgraph development.</p>
+<ul>
+<li>Validate Input</li>
+<li>Add pagination to limit data being returned. It reduces unexpected usage costs, keeps queries performant, and keeps indexers happy.</li>
+<li>Enforce rate limiting based on IP</li>
+<li>Implement timeouts to limit resource usage.  It will also keep your indexers happy and will help reduce complaints within The Graph network keeping everyone else happy.</li>
+<li>Evaluate your code for nested queries.  Nested queries are used in Denial of Service attacks.</li>
+<li>Remember to disable excessive error messages in production environments to limit risky information disclosure.</li>
+</ul>
+<h2 id="concluding-remarks">Concluding Remarks</h2>
+<p>Web3 developers face many challenges when architecting and developing data-rich dApps.  Retrieving meaningful information from across the decentralized web is a huge challenge.  The Graph provides a sustainable network ecosystem to query blockchain data by means of a simple GraphQL query from within a dApp.</p>
+
+      </div>
+      <footer>
+        <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="../../categories/web3/">web3</a></li>
+        
+          <li><a class="article-terms-link" href="../../categories/infrastructure/">infrastructure</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="../../tags/web3/">web3</a></li>
+        
+          <li><a class="article-terms-link" href="../../tags/grt/">GRT</a></li>
+        
+          <li><a class="article-terms-link" href="../../tags/crypto/">crypto</a></li>
+        
+          <li><a class="article-terms-link" href="../../tags/dapps/">dApps</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+      </footer>
+    </div>
+    
+      
+
+    
+  </article>
+  <div class="pagination">
+    
+      <a href="../../blog/opensource-security-tools-across-the-devops-lifecycle/" class="button left"><span>Opensource AppSec for DevOps</span></a>
+    
+    
+      <a href="../../blog/nft-security/" class="button right"><span>Is Your NFT Collectable Secure and Legitimate?</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="../../blog/shift-everywhere/" class="image" style="--bg-image: url('/img/appsec/everywhere.png');">
+    <img src="../../img/appsec/everywhere.png" alt="Shift Everywhere">
+  </a>
+        <header>
+          <h2><a href="../../blog/shift-everywhere/">Shift Left? Shift Everywhere!</a></h2>
+          <time class="published" datetime="2023-03-18 00:00:00 &#43;0000 UTC">March 18, 2023</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/opensource-security-tools-across-the-devops-lifecycle/" class="image" style="--bg-image: url('/img/appsec/opensource.jpg');">
+    <img class="stretchV" src="../../img/appsec/opensource.jpg" alt="Opensource AppSec">
+  </a>
+        <header>
+          <h2><a href="../../blog/opensource-security-tools-across-the-devops-lifecycle/">Opensource AppSec for DevOps</a></h2>
+          <time class="published" datetime="2022-02-20 00:00:00 &#43;0000 UTC">February 20, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/whitepaper-grt/" class="image" style="--bg-image: url('/img/whitepaper/grt.png');">
+    <img src="../../img/whitepaper/grt.png" alt="The Graph">
+  </a>
+        <header>
+          <h2><a href="../../blog/whitepaper-grt/">The Graph (GRT) Whitepaper Review</a></h2>
+          <time class="published" datetime="2021-08-15 00:00:00 &#43;0000 UTC">August 15, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/nft-security/" class="image" style="--bg-image: url('/img/appsec/nft.png');">
+    <img src="../../img/appsec/nft.png" alt="nft">
+  </a>
+        <header>
+          <h2><a href="../../blog/nft-security/">Is Your NFT Collectable Secure and Legitimate?</a></h2>
+          <time class="published" datetime="2021-06-28 00:00:00 &#43;0000 UTC">June 28, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="../../blog/starting-application-security-program/" class="image" style="--bg-image: url('/img/appsec/application-security-program.jpg');">
+    <img class="stretchH" src="../../img/appsec/application-security-program.jpg" alt="Application Security">
+  </a>
+        <header>
+          <h2><a href="../../blog/starting-application-security-program/">Starting an Application Security Program</a></h2>
+          <time class="published" datetime="2021-05-12 00:00:00 &#43;0000 UTC">May 12, 2021</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="../../blog/" class="button">See More</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="../../categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="../../categories/web3/">web3<span class="count">5</span></a>
+          
+          <li>
+              <a href="../../categories/web2/">web2<span class="count">3</span></a>
+          
+          <li>
+              <a href="../../categories/random/">random<span class="count">2</span></a>
+          
+          <li>
+              <a href="../../categories/blockchain/">blockchain<span class="count">1</span></a>
+          
+          <li>
+              <a href="../../categories/infrastructure/">infrastructure<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This site is committed to Web and Decentralized Computing</p>
+      <footer>
+        <a href="../../about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/DeCaPa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+<li><a href="//gitlab.com/DeCaPa" target="_blank" rel="noopener" title="GitLab" class="fab fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/decapua" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//reddit.com/user/DeCaPaio" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/DeCaPa_io" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/solutionprovide" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/DeCaPaio" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    © 2023 MaTTeo&#39;s Dlog
+      <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.110.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="../../js/highlight.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script><script src="../../js/bundle.min.bd6c6026e27c1a4420f4b04f761f6afb28de6d780b8e1e69d5bc6268b0fd3c1b.js"></script>
+    <script src="../../js/add-on.js"></script>
+    </div>
+  </body>
+</html>
